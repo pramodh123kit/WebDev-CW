@@ -3,8 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
+
+    <!-- Nav section -->
+
+    <nav>
+        <ul>
+            <a href="../Main%20Page"><li>Home</li></a>
+            <a href="../About%20us"><li>About Us</li></a>
+            <a href="../Gallery"><li>Gallery</li></a>
+            <a href="../Products"><li>Shop</li></a>
+            <a href="../Site%20Map"><li>Site Map</li></a>
+            <a href="../Quiz"><li>Quiz</li></a>
+            <a href="../Comment%20Section"><li>Feedback</li></a>
+        </ul>
+    </nav>
+    
+    <!-- Button section -->
+    
+    <div class="category--bar">
+        <div class="category--one">
+            <button>Religous</button>
+        </div>
+        <div class="category--2">
+            <button>Adventure</button>
+        </div><div class="category--3">
+            <button>Beauty</button>
+        </div><div class="category--4">
+            <button>Cultural</button>
+        </div>
+    </div>
+    
+    <!--  -->
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/17.jpg"></div>
+            <div class="swiper-slide"><img src="images/44.jpg"></div>
+            <div class="swiper-slide"><img src="images/5b7.jpg"></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
