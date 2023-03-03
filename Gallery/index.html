@@ -1,69 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-</head>
-<body>
-
-    <!-- Nav section -->
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <a href="../Main%20Page"><li>Home</li></a>
-            <a href="../About%20us"><li>About Us</li></a>
-            <a href="../Gallery"><li>Gallery</li></a>
-            <a href="../Products"><li>Shop</li></a>
-            <a href="../Site%20Map"><li>Site Map</li></a>
-            <a href="../Quiz"><li>Quiz</li></a>
-            <a href="../Comment%20Section"><li>Feedback</li></a>
-        </ul>
+      <ul>
+        <a href="../Main%20Page"><li>Home</li></a>
+        <a href="../About%20us"><li>About Us</li></a>
+        <a href="../Gallery"><li>Gallery</li></a>
+        <a href="../Products"><li>Shop</li></a>
+        <a href="../Site%20Map"><li>Site Map</li></a>
+        <a href="../Quiz"><li>Quiz</li></a>
+        <a href="../Comment%20Section"><li>Feedback</li></a>
+      </ul>
     </nav>
-    
+
     <!-- Button section -->
-    
+
     <div class="category--bar">
-        <div class="category--one">
-            <button>Religous</button>
-        </div>
-        <div class="category--2">
-            <button>Adventure</button>
-        </div><div class="category--3">
-            <button>Beauty</button>
-        </div><div class="category--4">
-            <button>Cultural</button>
-        </div>
+      <div class="category--one">
+        <a href="#religous">
+          <button>Religous</button>
+        </a>
+      </div>
+      <div class="category--2">
+        <a href="#adventure">
+          <button>Adventure</button>
+        </a>
+      </div>
+      <div class="category--3">
+        <a href="#beauty">
+          <button>Beauty</button>
+        </a>
+      </div>
+      <div class="category--4">
+        <a href="#cultural">
+          <button>Cultural</button>
+        </a>
+      </div>
     </div>
+
+    <!-- Gallery 1 -->
     
-    <!--  -->
-    <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide gradient"><img src="images/17.jpg">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae amet et quos corrupti! Nostrum nisi maiores voluptatem odit tempora. Officiis ea repudiandae minima odit placeat nemo temporibus autem, inventore illum.</p>
-            </div>
-            <div class="swiper-slide"><img src="images/44.jpg"></div>
-            <div class="swiper-slide"><img src="images/5b7.jpg"></div>
-            
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
+    <section id="religous">
+      <div class="container--1">
+        <h1>Religous</h1>
+        <div class="container">
+          <div class="container1-place-1">
+            <img src="images/17.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+          <div class="container1-place-2">
+            <img src="images/2.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="scripts.js"></script>
+    <!-- Gallery 2 -->
 
-</body>
+    <section id="adventure">
+      <div class="container--1">
+        <h1>Adventure</h1>
+        <div class="container">
+          <div class="container2-place-1">
+            <img src="images/17.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+          <div class="container2-place-2">
+            <img src="images/2.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery 3 -->
+
+    <section id="beauty">
+      <div class="container--1">
+        <h1>Beauty</h1>
+        <div class="container">
+          <div class="container3-place-1">
+            <img src="images/17.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+          <div class="container3-place-2">
+            <img src="images/2.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery 4 -->
+
+    <section id="cultural">
+      <div class="container--1">
+        <h1>Cultural</h1>
+        <div class="container">
+          <div class="container4-place-1">
+            <img src="images/17.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+          <div class="container4-place-2">
+            <img src="images/2.jpg" class="image" />
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              similique, laudantium nihil id voluptatibus ab suscipit facilis
+              repellendus labore, cumque voluptatum ipsum vero ullam
+              necessitatibus tenetur odio enim tempore. Placeat?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
