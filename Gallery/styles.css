@@ -3,13 +3,9 @@
   --white: #ffffff;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
-
-
 
 img{
   height: 100vh;
@@ -75,8 +71,6 @@ button:hover {
 button:focus{
   background:linear-gradient(cyan,rgb(255, 255, 255));
 }
-
-
 
 a{
   text-decoration: none;
