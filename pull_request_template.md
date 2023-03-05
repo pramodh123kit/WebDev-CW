@@ -8,4 +8,5 @@
 <!--- Include any relevant screenshots or GIFs to showcase the new feature or file --->
 
 ## Related Issues
+- Issue #[issue number]
 <!--- Link any related issues that this PR resolves or is related to --->
