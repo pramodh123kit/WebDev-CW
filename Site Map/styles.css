@@ -1,0 +1,80 @@
+nav{
+  width: 100vw;
+  position: sticky;
+  color: white;
+  background-color: cyan;
+  padding-top: 0.5em;
+  font-weight: 300;
+  padding-left: 10px;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  
+}
+nav a {
+  text-decoration: none;
+  color:#121212 ;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 10em;
+}
+
+p {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  
+}
+
+.center {
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.rectSvg{
+  margin: 0px 10px;
+}
+
+.ab {
+  margin-left: 185px;
+}
+
+
+.home-circle {
+  transition:0.325s ease;
+  cursor: pointer;
+}
+
+.home-circle:hover {
+  opacity:0.5;
+}
+
+.rect {
+  transition:0.325s ease;
+  cursor: pointer;
+  
+}
+.rect:hover {
+  opacity:0.5; 
+  
+}
+ text:hover {
+  opacity:0.5; 
+  cursor: pointer;
+ }
+
+
+
