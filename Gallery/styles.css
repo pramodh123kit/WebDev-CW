@@ -1,19 +1,21 @@
-:root {
-  --red: #e20000;
-  --white: #ffffff;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color:#fff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-img{
-  height: 100vh;
-  width: 100vw;
-  position: static;
+:root {
+  --red: #e20000;
+  --white: #ffffff;
 }
 
-nav{
+nav {
   width: 100vw;
   position: sticky;
   color: white;
@@ -24,8 +26,7 @@ nav{
   font-size: 1.2em;
 }
 
-
-ul{
+ul {
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -34,256 +35,109 @@ ul{
   margin-right: 10em;
 }
 
-img {
-  border-radius: 20px;
+/* Carousel */
+
+.carousel--section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  border-radius: 10px;
+  padding-top: 1%;
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.item {
+  position: absolute;
+  display: none;
+  width: 100%;
+
+}
+
+.main {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 1100px;
-  height: 600px;
 }
 
-/* Button Section */
-
-.category--bar{
-  display:flex;
-  justify-content: center;
-  padding: 3rem;
+.item > img {
+  height: 40rem;
+  width: 99.5%;
+  transition: all 0.3s ease;
+  border: 3px solid rgb(2, 2, 2);
+  object-fit: cover;
+  border-radius: 30px;
 }
 
-button {
-  background:linear-gradient(rgb(18, 214, 240),rgb(23, 241, 151));
-  padding: 10px 30px;
-  margin-right: 50px;
-  border-radius: 200px;
-  background-color: #fff;
-  font-size: 15px;
-  border: none;
+
+.navigation .prev {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  margin-top: 33%;
+  left: -5rem;
+  font-weight: bolder;
+}
+
+.navigation .next {
+  right: -5rem;
+  position: absolute;
+  font-size: 25px;
+  font-weight: bolder;
+  z-index: 10;
+  margin-top: 33%;
+}
+
+.navigation .nav-btn {
+  background: rgb(236, 222, 222);
   cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-button:hover {
-  opacity:0.5;
-}
-
-button:focus{
-  background:linear-gradient(cyan,rgb(255, 255, 255));
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-.image {
-  width: 500px;
-  height:400px;
-}
-
-.description {
-  padding:10px;
-}
-
-.container--1 h1 {
-  text-align: center;
-  padding-right: 500px;
-}
-
-h1 {
-  font-size: 64px;
-  color:red;
-  padding-top: 3%;
-  margin-left: 100px;
-  
-}
-.container--1,h1 {
-  margin-right: 100px;
-  padding-left: 20%;
-  margin-top:150px;
-}
-
-.container {
-  
-  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border:solid rgb(49, 214, 255);
-  width: 80%;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgb(34, 32, 32);
 }
 
-/* Gallery 1 */
-
-.container1-place-1 {
-  background: linear-gradient(white,lightpink);
-  display: flex;
-  padding:10px;
-  margin-bottom: 20px;
+.navigation .nav-btn:hover {
+  background: white;
 }
 
-.container1-place-2 {
-  background: linear-gradient(white,rgb(182, 255, 233));
-  display: flex;
-  padding:10px
+.text--container {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
 }
 
-
-/* Gallery 2 */
-
-.container2-place-1 {
-  background: linear-gradient(white,lightpink);
-  display: flex;
-  padding:10px;
-  margin-bottom: 20px;
+p {
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.container2-place-2 {
-  background: linear-gradient(white,rgb(182, 255, 233));
-  display: flex;
-  padding:10px
+.p1 {
+  background: linear-gradient(to right, #e4e7e4e1, #378b45de);
 }
-
-/* Gallery 3 */
-
-.container3-place-1 {
-  background: linear-gradient(white,lightpink);
-  display: flex;
-  padding:10px;
-  margin-bottom: 20px;
+.p2 {
+  background: linear-gradient(to right, #e4e7e4e1, #404140de);
 }
-
-.container3-place-2 {
-  background: linear-gradient(white,rgb(182, 255, 233));
-  display: flex;
-  padding:10px
+.p3 {
+  background: linear-gradient(to right, #521c0ce1, #252725de);
 }
-
-/* Gallery 3 */
-
-.container4-place-1 {
-  background: linear-gradient(white,lightpink);
-  display: flex;
-  padding:10px;
-  margin-bottom: 20px;
+.p4 {
+  background: linear-gradient(to right, #107aa3e1, #272727de);
 }
-
-.container4-place-2 {
-  background: linear-gradient(white,rgb(182, 255, 233));
-  display: flex;
-  padding:10px
+.p5 {
+  background: linear-gradient(to right, #803605e1, #2f302fde);
 }
-
-.image:hover {
-  border-radius:50%;
-  transition: 1s ease;
-  transition-timing-function: 3;
-  }
-
-  /* Footer */
-  .footer__container {
-    margin-top: 200px;
-    background-color: #141414;
-    padding:5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #footer__logo {
-    color:#fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
-  .footer__links {
-    width:100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer__links--wrapper {
-    display: flex;
-  }
-  
-  .footer__link--items{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing:border-box ;
-  }
-  
-  .footer__link--items h2{
-    margin-bottom: 16px;
-  }
-  
-  .footer__link--items > h2{
-    color: #fff;
-  }
-  
-  .footer__link--items a{
-    color:#fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer__link--items a:hover {
-    color: #e9e9e9;
-    transition: 0.3s ease-out;
-  }
-  
-  /* Social Icons */
-  .social__icon--link {
-    color:#fff;
-    font-size: 24px;
-  }
-  
-  .social__media {
-    max-width: 1000px;
-    width: 100%;
-  }
-  
-  .social__media--wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1000px;
-    margin:40px auto 0 auto;
-  }
-  
-  .social__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-  }
-  
-  .social__logo {
-    color:#fff;
-    justify-self: flex-start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display:flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
-  .website__rights {
-    color: #fff;
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
+.p6 {
+  background: linear-gradient(to right, #a17d6fe1, #313331de);
+}
