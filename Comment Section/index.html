@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
-<form>
-    <label for="name">Please fill your name below: </label>
-    <input type="text" name="" id="name">
+
+<div id="menu">
+    <div id="menu-items">
+    <a href="../Main Page/" class="menu-item">Home</a>
+    <a href="../Gallery/" class="menu-item">Gallery</a>
+    <a href="../Products/" class="menu-item">Shop</a>
+    <a href="../Quiz/" class="menu-item">Quiz</a>
+    <a href="../Comment Section/" class="menu-item">Feedback</a>
+    <a href="../Site Map/" class="menu-item">Site Map</a>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+</div>
+
+<form action="mailto:randila.20220636@iit.ac.lk" method="post" enctype="text/plain">
+    <div>
+    <label for="name">Please fill your name below </label><br>
+    <input type="text" name="Please fill your name below" id="name">
+    </div>
+    <div>
+        <label for="rate">Rate Us:</label><br>
+        <div id="rate">
+        <input type="radio" name="1" >
+        <input type="radio" name="2">
+        <input type="radio" name="3">
+        <input type="radio" name="4">
+        </div>
+    </div>
+    <div>
+        <label for="q1">How was your overall experience with our website?</label><br>
+        <input type="text" name="How was your overall experience with our website?" id="q1">
+    </div>
+    <div>
+        <label for="q2">What Did you like the most about our website?</label><br>
+        <input type="text" name="What Did you like the most about our website?" id="q2">
+    </div>
+    <div>
+        <label for="q3">Do you have any suggestions for how we can improve our website or services?</label><br>
+        <input type="text" name="Do you have any suggestions for how we can improve our website or services?" id="q3">
+    </div><br>
+    <input type="submit" name="submit" value="Submit">
 </form>
 </body>
 </html>
