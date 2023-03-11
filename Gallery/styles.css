@@ -15,28 +15,7 @@ html {
   --white: #ffffff;
 }
 
-nav {
-  width: 100vw;
-  position: sticky;
-  color: white;
-  background-color: cyan;
-  padding-top: 0.5em;
-  font-weight: 300;
-  padding-left: 10px;
-  font-size: 1.2em;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  list-style-type: none;
-  justify-content: flex-end;
-  margin-right: 10em;
-}
-
 /* Carousel */
-
 .carousel--section {
   position: relative;
   height: 100vh;
@@ -110,6 +89,7 @@ ul {
 }
 
 .text-container {
+  margin-top:-10px;
   position: absolute;
   overflow: hidden;
   padding: 0;
