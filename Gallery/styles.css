@@ -49,7 +49,6 @@ html {
   transition: all 0.3s ease;
   border: 3px solid rgb(2, 2, 2);
   object-fit: cover;
-  border-radius: 30px;
 }
 
 
@@ -89,35 +88,18 @@ html {
 }
 
 .text-container {
-  margin-top:-10px;
+  margin-top:-2rem;
   position: absolute;
   overflow: hidden;
   padding: 0;
+  width: 100.12%;
 }
 
-p {
-  border: 2px solid black;
+.text-container{ border: 2px solid black;
   font-size: 18px;
   font-weight: bold;
   padding: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.p1 {
-  background: linear-gradient(to right, #e4e7e4e1, #378b45de);
-}
-.p2 {
-  background: linear-gradient(to right, #e4e7e4e1, #404140de);
-}
-.p3 {
-  background: linear-gradient(to right, #521c0ce1, #252725de);
-}
-.p4 {
-  background: linear-gradient(to right, #107aa3e1, #272727de);
-}
-.p5 {
-  background: linear-gradient(to right, #803605e1, #2f302fde);
-}
-.p6 {
-  background: linear-gradient(to right, #a17d6fe1, #313331de);
+    background: rgb(36, 35, 35);
 }
