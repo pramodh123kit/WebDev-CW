@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  transition:font-size 0.125s;
+  left: 50%;
+  margin-top: 80px;
+  color: rgb(0, 0, 0);
+  font-family: Trebuchet MS;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 500;
+  font-family: 'Caveat', cursive;
+  text-shadow: 2px 4px 4px rgba(192, 183, 192, 0.6); 
+  text-shadow: 2px 2px 20px var(--background);
+  padding-bottom: 150px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+   'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+h3 {
+  font-size:20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+  'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+img {
+  max-height:100%;
+  max-width:100%;
+  height: 270px;
+  width:400px;
+}
+
+.container {
+ width: 100vw;
+ margin: auto;
+ display:flex;
+ padding: 20px;
+ gap: 30px;
+ position: relative;
+}
+
+.types {
+  box-shadow: 9px 9px 15px -12px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.gap {
+  margin-left: 100px;
+}
+.button {
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 160px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
