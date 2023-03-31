@@ -16,9 +16,29 @@ body{
 }
 #banner{
     width: 100vw;
-    height: 100vh;
-    background: black;
+    height: 70vh;
     position: static;
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+}
+#banner div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#banner video{
+    position: absolute;
+    z-index: -1;
+}
+#banner h1{
+    position: absolute;
+    font-size: 7em;
+    color: white;
 }
 
 #hero-section{
@@ -34,7 +54,7 @@ body{
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 100% 40%;
 }
 
 #image-track{
@@ -58,11 +78,13 @@ body{
     background-color: rgb(20, 20, 20);
     opacity: 0;
     transition: all 800ms ease;
+    z-index: -1;
 }
 
 #menu.is-active{
     opacity: 100;
     height: 100vh;
+    z-index: 1;
 }
 
 .menu-item{
@@ -181,7 +203,7 @@ h1{
     font-family: 'Caveat', cursive;
       font-size: 4rem;
       font-weight: 1000;
-
+    color:  #800000;
 }
 p{
     text-align: center;
@@ -193,7 +215,7 @@ p{
 }
 #welcome-container{
     width: 80vw;
-    height: 100vh;
+    height: 90vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -206,6 +228,7 @@ p{
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 5rem;
     
 }
 #partners .partners-img {
