@@ -1,20 +1,29 @@
 body{
     margin: 0px;
     position: relative;
-    
+}
+
+#feedback-form{
+    display: block;
 }
 
 /* ---------Navigation bar styles -------------*/
 
 #menu{
     position: relative;
-    height: 100vh;
+    height: 0;
     display: flex;
     align-items: center;
     background-color: rgb(20, 20, 20);
-    display: block;
-    
-    
+    opacity: 0;
+    transition: all 800ms ease;
+    z-index: -1;
+}
+
+#menu.is-active{
+    opacity: 100;
+    height: 100vh;
+    z-index: 1;
 }
 
 .menu-item{
@@ -46,8 +55,8 @@ body{
     height: 100vh;
     width: 100vw;
     background-image: radial-gradient(
-        rgba(2225,225,225,0.1)9%,
-        transparent 9%
+            rgba(2225,225,225,0.1)9%,
+            transparent 9%
     );
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
@@ -67,7 +76,7 @@ body{
 #menu-background-image{
     height: 100%;
     width: 100%;
-    background-image: url(./images/navbar-img.jpg);
+    background-image: url(tharaka-jayasuriya-P_FuVh64Wus-unsplash.jpg);
     position: absolute;
     left: 0px;
     top: 0px;
@@ -75,8 +84,8 @@ body{
     background-position: center 40%;
     background-size: 110vmax;
     opacity: 0.15;
-    transition: opacity 800ms ease, background-position 800ms ease, 
-                background-size 800ms ease;
+    transition: opacity 800ms ease, background-position 800ms ease,
+    background-size 800ms ease;
 }
 
 #menu-items:hover ~ #menu-background-image {
@@ -84,9 +93,150 @@ body{
     opacity: 0.10;
 }
 
+.toggle-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    display: flex;
+    width: 20px;
+    height: 20px;
+
+}
+
+.toggle-btn > span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    display: flex;
+    position: absolute;
+    transition: .3s;
+    background: black;
+}
+
+.toggle-btn > span:nth-child(1){
+    top: 20%;
+}
+
+.toggle-btn > span:nth-child(2){
+    top: 80%;
+}
+
+.toggle-btn.is-active span{
+    background: white;
+}
+
+.toggle-btn.is-active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.toggle-btn.is-active span:nth-child(2){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
 /* ------------------------------------------------- */
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 form {
-    height: 100vh;
-    padding: 5rem;
+    height: 75vh;
+    padding: 6rem;
+}
+.question{
+    margin-top: 1.5rem;
+}
+
+.question input[type="text"] {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.question input{
+    margin-top: 1rem;
+}
+
+.submit-btn{
+    margin-left: 40%;
+}
+/*Rating*/
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #09f;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+}
+
+
+input:invalid + span {
+    color: red;
+    font-weight: bold;
 }

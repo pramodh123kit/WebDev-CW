@@ -1,8 +1,4 @@
 
-window.onload = (event) => {
-
-
-};
 
 window.onload = () => {
 
