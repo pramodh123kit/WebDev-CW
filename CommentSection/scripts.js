@@ -1,3 +1,4 @@
+
 window.onload = () =>{
     document.getElementById("btn").onclick = function (e) {
         var menu = document.querySelector('#menu');
@@ -10,7 +11,8 @@ window.onload = () =>{
     var submit = document.querySelector('#submit-btn');
     submit.addEventListener('click',function (e) {
         document.getElementById('feedback-form').style.display='none';
-        document.getElementById('thank-you').style.display='block';
+
+        document.getElementById('thank-you').style.display='flex';
     });
 
     let input = document.getElementById('q1');
@@ -25,4 +27,3 @@ window.onload = () =>{
 
 
 }
-
