@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d34436-cd6e-4063-b72e-7849b8030ffe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CommentSection/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CommentSection/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentSection/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/CommentSection/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentSection/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/CommentSection/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentSection/tharaka-jayasuriya-P_FuVh64Wus-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CommentSection/tharaka-jayasuriya-P_FuVh64Wus-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage/pexels-pradeep-k-liyanage-12721311-1920x810-60fps.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage/pexels-pradeep-k-liyanage-12721311-1920x810-60fps.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/MainPage/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="b0d34436-cd6e-4063-b72e-7849b8030ffe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,19 +28,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CommentSection" />

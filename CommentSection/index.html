@@ -5,6 +5,11 @@
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Caveat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a4656ff49f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div class="toggle-btn" id="btn">
@@ -23,26 +28,32 @@
     <div id="menu-background-pattern"></div>
     <div id="menu-background-image"></div>
 </div>
-<section >
+<section id="thank-you" style="display: none">
+    <p>Thank you for submitting your feedback on our tourism website! We appreciate your valuable input and are grateful
+        for your time. Your comments and suggestions will help us improve our services and make sure that we're providing
+        the best possible experience for all our visitors. Thank you for choosing to be a part of our community and for
+        helping us to make it even better!</p>
+</section>
+<section class="container" >
     <form id="feedback-form" action="mailto:randila.20220636@iit.ac.lk" method="post" enctype="text/plain">
         <div class="question">
-            <label for="name">Please fill your name below </label><br>
+            <label for="name">Please Fill Your Name </label><br>
             <input type="text" name="Please fill your name below" id="name">
         </div>
         <div class="question">
-            <label for="gender">Please select your Gender:</label>
+            <label for="gender">Please Select Your Gender:</label>
             <select name="gender" id="gender">
                 <option value="Select none">Please Select</option>
                 <option value="Male">Male</option>
                 <option value="Female" >Female</option>
-                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Prefer not to say">Prefer Not To Say</option>
             </select>
         </div>
         <div class="question">
             <label>Rate Us:</label><br>
             <div class="rating">
                 <label>
-                    <input type="radio" name="stars" value="1" />
+                    <input type="radio" name="Rating " value="1" />
                     <span class="icon">★</span>
                 </label>
                 <label>
@@ -74,22 +85,58 @@
             </div>
         </div>
         <div class="question">
-            <label for="q1">How was your overall experience with our website?</label><br>
+            <label for="q1">How Was Your Overall Experience With Our Website? (*Required)</label><br>
             <input type="text" name="What Did you like the most about our website?" id="q1" required>
         </div>
         <div class="question">
-            <label for="q2">What Did you like the most about our website?</label><br>
+            <label for="q2">What Did You Like The Most About Our Website?</label><br>
             <input type="text" name="What Did you like the most about our website?" id="q2">
         </div>
         <div class="question">
-            <label for="q3">Do you have any suggestions for how we can improve our website or services?</label><br>
+            <label for="q3">Do You Have Any Suggestions For How We Can Improve Our Website Or Services?</label><br>
             <input type="text" name="Do you have any suggestions for how we can improve our website or services?" id="q3">
         </div><br>
-        <input  id="submit-btn" type="submit" disabled>
+        <div class="submit-section">
+            <input  id="submit-btn" type="submit" disabled>
+        </div>
+
     </form>
 </section>
-<section id="thank-you" style="display: none">
-    <h1>Thank you for the submission</h1>
+<!---- Footer ---->
+<section id="footer">
+    <footer>
+        <div class="footer-content">
+            <h3>Ceylon Tourism</h3>
+            <p>
+                Explicabo minus, exercitationem, reprehenderit distinctio quos
+                facere facilis libero saepe harum, voluptas quod. Non corporis quos
+                facere repudiandae tempore veniam unde animi!
+            </p>
+            <ul class="socials">
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span> copyright &copy;2023 Ceylon Tourism. designed by</span>
+                <span>H3 Group</span>
+            </p>
+        </div>
+    </footer>
 </section>
 </body>
 </html>
