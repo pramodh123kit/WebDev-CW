@@ -71,6 +71,7 @@ body{
   font-size: clamp(2rem,5vw,5rem);
   font-family: "Ibarra Real Nova", serif;
   display: block;
+  line-height: 80px;
   text-decoration: none;
   padding: clamp(0.25rem,0.5vw,1rem)0rem;
   transition: opacity 400ms ease;
@@ -116,7 +117,7 @@ body{
 #menu-background-image{
   height: 100%;
   width: 100%;
-  background-image: url(./images/navbar-img.jpg);
+  background-image: url(../Quiz/navbar-img.jpg);
   position: absolute;
   left: 0px;
   top: 0px;

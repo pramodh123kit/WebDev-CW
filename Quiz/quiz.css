@@ -398,7 +398,7 @@ footer #next_b{
     width: 80%;
 }
 
-footer{
+#quiz-footer{
     position: relative;
     z-index: 99;
     height: 70px;
