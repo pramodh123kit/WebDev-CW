@@ -1,0 +1,29 @@
+article{
+    width: 75vw;
+    height: 70vh;
+    margin-bottom: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 2%;
+    overflow: auto;
+    box-shadow: 5px 4px 5px 5px rgba(0,0,0,0.2);
+    /*filter: grayscale(100%);*/
+}
+article p{
+    text-align: left;
+    width: 99%;
+    color: #2d2d2d;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2em 2em 2em 2em;
+    display: block;
+}
+article h2{
+    color: #f8f6f6;
+    text-align: center;
+}
+
+
