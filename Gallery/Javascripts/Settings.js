@@ -49,7 +49,7 @@ document.getElementById("dark").addEventListener("click", function () {
     } else if (i == 11) {
       h1Array[11].style.color = "#ff0";
     } else if (i > 0 && i <= 10 ) {
-      h1Array[i].style.color = "rgb(253,183,10)";
+      h1Array[i].style.color = "#000";
     }
   }
 });
