@@ -8,14 +8,16 @@ h1{
   left: 50%;
   margin-top: 80px;
   color: rgb(0, 0, 0);
-  font-family: Trebuchet MS;
   text-align: center;
-  font-size: 6rem;
-  font-weight: 500;
   font-family: 'Caveat', cursive;
   text-shadow: 2px 4px 4px rgba(192, 183, 192, 0.6); 
   text-shadow: 2px 2px 20px var(--background);
   padding-bottom: 150px;
+  font-family: Trebuchet MS;
+  font-weight: 1000;
+  font-size: 5rem;
+  font-family: 'Caveat', cursive;
+  text-shadow: 2px 4px 4px rgb(255, 255, 255);
 }
 
 h2 {
