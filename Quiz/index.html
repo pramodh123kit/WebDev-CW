@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <script src='https://kit.fontawesome.com/a4656ff49f.js' crossorigin='anonymous'></script>
+    <title>Quiz</title> 
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+		body {
+			overflow: scroll;
+		}
+	</style>
 </head>
 <body>
+    
+    <div class="toggle-btn" id="btn">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menu">
+        <div id="menu-items">
+          <a href="../MainPage/" class="menu-item">Home</a>
+          <a href="../Gallery/Gallery.html" class="menu-item">Gallery</a>
+          <a href="../Products/" class="menu-item">Shop</a>
+          <a href="../Quiz/" class="menu-item">Quiz</a>
+          <a href="../CommentSection/" class="menu-item">Feedback</a>
+          <a href="../SiteMap/sitemap.html" class="menu-item">Site Map</a>
+          <a href="../AboutUs/index.html" class="menu-item">About us</a>
+          <a href="../Contentpage/Contentpage.html" class="menu-item">Content</a>
+        </div>
+        <div id="menu-background-pattern"></div>
+        <div id="menu-background-image"></div>
+      </div>
 
+      <!-- Video-->
+    <div class="video_section">
+        <video id="background_video" autoplay loop muted>
+          <source src="Sri Lanka.mp4" type="video/mp4" />
+        </video>
+    
+   <!--Start Quiz Button-->
+   <div class = "start_btn_box">
+   <div class="start_btn"><button>Start Quiz</button></div>
+    </div>
+   <!--info box-->
+   <div class="info_box">
+        <div class="info_tittle">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will only have <span> 15 Seconds </span>each for Question.</div>
+            <div class="info">2. There are 10 Questions in this Quiz.</div>
+            <div class="info">3. You'll get points on the basis of your correct answer.</div>
+            <div class="info">4. To start the Quiz click "Continue" button.</div>
+
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+        </div>
+
+    <!--Quiz box--> 
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class = "time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What is the largest city in Sri Lanka?</span>
+            </div>
+           <div class="option_list">
+                <!--<div class = "option">
+                    <span>Kandy</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+               <div class ="option">
+                    <span>Colombo</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>    
+                <div class = "option">
+                    <span>Pollonaruwa</span>
+                </div>
+                <div class = "option">
+                    <span>Galle</span>
+                </div>-->
+            </div>
+        </section>
+        
+        <!--Quiz Box Footer-->
+        <footer>
+            <div class="total_que">
+               <!-- <span>Questions <p>1</p>/<p>10</p></span>-->
+            </div>
+            <button class="next_btn">Next Que</button>           
+        </footer>
+    </div> 
+
+    <!--Result box-->
+    <div class="result_box">
+        <div class="icon">
+            <i class='fas fa-crown'></i>
+        </div>
+        <div class="complete_text">You Completed the Quiz!</div>
+        <div class="score_text">
+           <!--<span>You got only <p>2</p>out of <P>10</P> </span>-->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script src="nav.js"></script>   
 </body>
 </html>
