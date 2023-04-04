@@ -1,0 +1,95 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-color:#93989b;
+}
+
+h1{
+	background-color: powderblue;
+	text-align: center;
+	color: black;
+}
+
+/*sectioning*/
+.grid-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #93989b;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 16% 42% 42%;
+    grid-template-areas: ". . ." "logo div1 div2" "logo div3 div4";
+}
+  
+.logo {
+    grid-area: logo;
+}
+
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+}
+
+.div3 {
+    grid-area: div3;
+}
+
+.div4 {
+    grid-area: div4;
+}
+
+img{
+  margin: 50px;
+  width: 50%;
+}
+
+/*name cards font, color etc.*/
+h1,
+h2 {
+  font-weight: 500;
+  margin: 0px 0px 5px 0px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #f6f6f7;
+}
+
+p {
+  margin: 0px;
+  font-size: 20PX;
+}
+
+.profile-card {
+    width: 500px;
+    height: 350px;
+    border: 1px solid rgb(248, 245, 245);
+    background: rgb(12, 7, 63);
+}
+
+.profile-card header {
+    width: 500px;
+    height: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.profile-card header h1 {
+    color: black;
+}
+
+  .profile-card .profile-bio {
+    width: 500px;
+    color: #f9fcfc;
+    margin-top: 50px;
+    text-align: center;
+}
