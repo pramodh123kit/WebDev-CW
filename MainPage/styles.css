@@ -9,40 +9,72 @@ body{
 }
 #banner{
     width: 100vw;
-    height: 70vh;
-    position: static;
-    display: block;
-    overflow: hidden;
+    height: 100vh;
     position: relative;
-
 }
-#banner div{
+
+#content-links{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.link-box{
+    width: 16rem;
+    height: 22rem;
+    position: relative;
+    transition: ease 300ms;
+}
+.link-box:hover{
+    transform: scale(1.1);
+}
+
+.link-box img{
     height: 100%;
     width: 100%;
+    border-radius: 4%;
+    text-align: center;
+    box-shadow: 5px 4px 5px 5px rgba(0,0,0,0.2);
+}
+.link-box h3{
+    position: absolute;
+    color: #6D7779;
+    background: white;
+    border-radius: 8%;
+    padding: 0.5em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+#content-boxes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2em;
+    margin: 6em auto 1em auto;
+    width: 75vw;
+
 }
 
-#banner video{
-    position: absolute;  
-    transform:translate(-50%,-50);  
-    color: rgb(255, 255, 255);
-    font-family: Trebuchet MS;
-    font-weight: 1000;
+#banner img{
+    height: 100%;
+    width: 100%;
     text-align: center;
-    font-size: 7rem;
-    padding-bottom: 200px;
-    font-family: 'Caveat', cursive;
-    text-shadow: 2px 4px 4px rgba(192, 183, 192, 0.6);
 }
+
 #banner h1{
     position: absolute;
     font-size: 7em;
     color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
 }
 
-#hero-section{
+#carousal-section{
     height: 60vh;
     width: 100vw;
     background-color: white;
@@ -62,7 +94,7 @@ body{
     display: flex;
     gap: 4vmin;
     position: absolute;
-    left: 50%;
+    left: -10%;
     top: 50%;
     transform: translate(0%, -50%);
 }
@@ -90,8 +122,8 @@ body{
 
 .menu-item{
     color: white;
-    font-size: clamp(2rem,5vw,5rem);
-    font-family: "Ibarra Real Nova", serif;
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem,0.5vw,1rem)0rem;
@@ -102,7 +134,7 @@ body{
     margin-left: clamp(4rem,20vw,48rem);
     position: relative;
     z-index: 2;
-    padding-top: 5em;
+    padding-top: 2em;
     line-height: 80px;
 }
 
@@ -170,11 +202,10 @@ body{
 .toggle-btn > span {
     width: 30px;
     height: 4px;
-    background: rgb(0, 0, 0);
     display: flex;
     position: absolute;
     transition: .3s;
-    background: rgb(0, 0, 0);
+    background: grey;
 }
 
 .toggle-btn > span:nth-child(1){
@@ -205,7 +236,7 @@ h1{
     font-family: 'Caveat', cursive;
       font-size: 4rem;
       font-weight: 1000;
-    color:  #800000;
+    color:  #034752;
 }
 p{
     text-align: center;
@@ -213,7 +244,7 @@ p{
       font-size:1.5rem;
       font-weight: 400;
       line-height: 1.5;
-      color:var(--color-grey);
+      color: #6D7779;
 }
 #welcome-container{
     width: 80vw;
@@ -225,6 +256,7 @@ p{
     align-items: center;
     flex-direction: column;
 }
+
 #partners{
     width: 80vw;
     height: 100vh;
@@ -314,6 +346,7 @@ footer {
     margin: 10px auto;
     line-height: 1.5;
     font-size: 1rem;
+    color: white;
 }
 
 .socials {
