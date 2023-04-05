@@ -1,3 +1,19 @@
+:root{
+    --paragraph-font-size:1.2rem;
+    --h1-font-size:4rem;
+    --paragraph-font-color:#6D7779;
+    --h1-font-color:#034752;
+    --pararaph-font-family:'Lato', sans-serif;
+    --h1-font-family:'Caveat', cursive;
+    --line-height:1.5rem;
+    --box-shadow:5px 4px 5px 5px rgba(0,0,0,0.2);
+}
+
+body{
+    margin: 0;
+    position: relative;
+}
+
 article{
     width: 75vw;
     height: 70vh;
@@ -10,20 +26,30 @@ article{
     flex-direction: column;
     border-radius: 2%;
     overflow: auto;
-    box-shadow: 5px 4px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
     /*filter: grayscale(100%);*/
+}
+
+article  p:hover {
+    background: white;
 }
 article p{
     text-align: left;
-    width: 99%;
-    color: #2d2d2d;
+    width: 100%;
+    font-family: var(--pararaph-font-family);
+    color: var(--paragraph-font-color);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 2em 2em 2em 2em;
     display: block;
+    transition: background ease 300ms;
 }
 article h2{
-    color: #f8f6f6;
+    color: var(--paragraph-font-color);
+    padding: 1rem;
+    background: white;
     text-align: center;
+    font-family: var(--pararaph-font-family);
+
 }
 
 ul{
@@ -34,18 +60,18 @@ ul{
 }
 h1{
     text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 4rem;
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
     font-weight: 1000;
-    color:  #800000;
+    color:  var(--h1-font-color);
 }
 p{
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size:1.5rem;
+    font-family: var(--pararaph-font-family);
+    font-size:var(--paragraph-font-size);
     font-weight: 400;
-    line-height: 1.5;
-    color:var(--color-grey);
+    line-height: var(--line-height);
+    color:var(--paragraph-font-color);
 }
 
 a{
@@ -53,15 +79,148 @@ a{
     color: #2d2d2d;
     opacity: 0.5;
     transition: opacity ease 300ms;
+    font-family: var(--pararaph-font-family);
 }
 a:hover{
     opacity: 1;
 }
 
-nav{
+nav {
     width: 60vw;
     height: 30vh;
     margin: 2em auto 2em auto;
 }
+
+/* ---------Navigation bar styles -------------*/
+
+#menu{
+    position: relative;
+    height: 0;
+    display: flex;
+    z-index: -1;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    opacity: 0;
+    transition: all 800ms ease;
+}
+
+#menu.is-active{
+    opacity: 100;
+    height: 100vh;
+    z-index: 1;
+}
+
+.menu-item{
+    color: white;
+    font-size: var(--h1-font-size);
+    font-family: var(--pararaph-font-family);
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem,0.5vw,1rem)0rem;
+    transition: opacity 400ms ease;
+    line-height: 80px;
+}
+
+#menu-items{
+    margin-left: clamp(4rem,20vw,48rem);
+    position: relative;
+    z-index: 2;
+    padding-top: 5em;
+}
+
+#menu-items:hover > .menu-item{
+    opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover{
+    opacity: 1;
+}
+
+#menu-background-pattern{
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(
+            rgba(2225,225,225,0.1)9%,
+            transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+     position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+#menu-items:hover ~ #menu-background-pattern{
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+
+
+#menu-background-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../AboutUs/navbar-img.jpg);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background-position: center 40%;
+    background-size: 110vmax;
+    opacity: 0.15;
+    transition: opacity 800ms ease, background-position 800ms ease,
+    background-size 800ms ease;
+}
+
+#menu-items:hover ~ #menu-background-image {
+    background-size: 100vmax;
+    opacity: 0.10;
+}
+
+.toggle-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 3;
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.toggle-btn > span {
+    width: 30px;
+    height: 4px;
+    display: flex;
+    position: absolute;
+    transition: .3s;
+    background: rgb(0, 0, 0);
+}
+
+.toggle-btn > span:nth-child(1){
+    top: 20%;
+}
+
+.toggle-btn > span:nth-child(2){
+    top: 80%;
+}
+
+.toggle-btn.is-active span{
+    background: white;
+}
+
+.toggle-btn.is-active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.toggle-btn.is-active span:nth-child(2){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------------------------- */
+
+
 
 
