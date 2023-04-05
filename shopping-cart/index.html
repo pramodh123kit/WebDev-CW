@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../shopping-cart/footer.css">
+    <link rel="stylesheet" href="../shopping-cart/nav.css">
+
+    <link rel="icon" href="../shopping-cart/Logo_WDDCW.png" type="image/icontype"/>
+    <script
+      src="https://kit.fontawesome.com/a4656ff49f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="toggle-btn" id="btn">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menu">
+        <div id="menu-items">
+          <a href="../index.html" class="menu-item">Home</a>
+          <a href="../Gallery/Gallery.html" class="menu-item">Gallery</a>
+          <a href="../shopping-cart/index.html" class="menu-item">Shop</a>
+          <a href="../Quiz/index.html" class="menu-item">Quiz</a>
+          <a href="../CommentSection/index.html" class="menu-item">Feedback</a>
+          <a href="../SiteMap/sitemap.html" class="menu-item">Site Map</a>
+          <a href="../AboutUs/index.html" class="menu-item">About us</a>
+          <a href="../Contentpage/Contentpage.html" class="menu-item">Content</a>
+        </div>
+        <div id="menu-background-pattern"></div>
+        <div id="menu-background-image"></div>
+      </div>
+
+    <!--Header-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <a href="#" id="" class="logo">Ceylon Tourism</a>
+            <!--Cart-Icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <div>
+                    <label for ="username">User Name</label>
+                    <input id="username" type="text" placeholder="John" name="username"><br>
+                    <label for ="useremail">User Email</label>
+                    <input id="useremail" type="text" placeholder="someone@domain.com" name="useremail"><br>
+                    <input type="checkbox" name="delivery" id="delivery" value="Express Delivery" checked>
+                    <label for="delivery">Express Delivery</label>    
+                </div>
+                <!--Buy Button-->
+                <button type="button" class="btn-buy">Place your order</button>
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="images/tshirtblack.jpg" alt="" class="product-img">
+                <h2 class="product-title">Black Tshirt</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 2-->
+            <div class="product-box">
+                <img src="images/tshirtblue.jpg" alt="" class="product-img">
+                <h2 class="product-title">Blue Tshirt</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="images/tshirtgrey.jpg" alt="" class="product-img">
+                <h2 class="product-title">Grey Tshirt</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="images/tshirtred.jpg" alt="" class="product-img">
+                <h2 class="product-title">Red Tshirt</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="images/painting1n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Music Players Painting</h2>
+                <span class="price">$60</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 6-->
+            <div class="product-box">
+                <img src="images/painting2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Peacock Painting</h2>
+                <span class="price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 7-->
+            <div class="product-box">
+                <img src="images/painting4n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nature Painting</h2>
+                <span class="price">$65</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 8-->
+            <div class="product-box">
+                <img src="images/painting5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Dancers Painting </h2>
+                <span class="price">$55</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Box 9-->
+            <div class="product-box">
+                <img src="images/claypot1n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Clay Pot </h2>
+                <span class="price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 10-->
+             <div class="product-box">
+                <img src="images/flowerpot1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Flower Pot </h2>
+                <span class="price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 11-->
+             <div class="product-box">
+                <img src="images/statue1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Avalokiteshwara Bodisathwa Statue </h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 12-->
+             <div class="product-box">
+                <img src="images/teaset.jpg" alt="" class="product-img">
+                <h2 class="product-title">Tea Set </h2>
+                <span class="price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 13-->
+             <div class="product-box">
+                <img src="images/woodart.jpg" alt="" class="product-img">
+                <h2 class="product-title">Isurumuni Statue </h2>
+                <span class="price">$85</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 14-->
+             <div class="product-box">
+                <img src="images/woodart1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Wooden carving Elephants in Srilanka </h2>
+                <span class="price">$75</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 15-->
+             <div class="product-box">
+                <img src="images/woodart4n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Wooden Carving (couple) </h2>
+                <span class="price">$75</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 16-->
+             <div class="product-box">
+                <img src="images/woodart6.jpg" alt="" class="product-img">
+                <h2 class="product-title">SriLankan Woodart </h2>
+                <span class="price">$70</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 17-->
+             <div class="product-box">
+                <img src="images/earing2n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Coconut shell Earings(Green colour)</h2>
+                <span class="price">$12</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 18-->
+             <div class="product-box">
+                <img src="images/earing3n.jpg" alt="" class="product-img">
+                <h2 class="product-title">Wool Earings(Red) </h2>
+                <span class="price">$10</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 19-->
+             <div class="product-box">
+                <img src="images/earing6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Artistic coconut Shell Earings</h2>
+                <span class="price">$15</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 20-->
+             <div class="product-box">
+                <img src="images/earing7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Seashell Earings </h2>
+                <span class="price">$13</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 21-->
+             <div class="product-box">
+                <img src="images/bag1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Srilanka Handmade Traditional Wetakeiya Bag </h2>
+                <span class="price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 22-->
+             <div class="product-box">
+                <img src="images/bag2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Handloom bag(white and brown) </h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 23-->
+             <div class="product-box">
+                <img src="images/bag3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Handloom bag(yellow and black) </h2>
+                <span class="price">$40</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!--Box 24-->
+             <div class="product-box">
+                <img src="images/bag4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Handmade Women Reed Bag(Red and green) </h2>
+                <span class="price">$35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="../PageEditor/index.html " class="pageeditor-link">Link to the page editor</a>
+    <!----- FOOTER ----->
+      <footer>
+        <div class="footer-content">
+          <h3>Ceylon Tourism</h3>
+          <p>
+            Our mission it to help people find the right tourism places they are looking for. 
+          </p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            copyright &copy;2023 Ceylon Tourism. designed by
+            <span>H3 Group</span>
+          </p>
+        </div>
+      </footer>
+    <script src="./main.js"></script>
+    <script src="../shopping-cart/nav.js"></script>
+</body>
+
+</html>

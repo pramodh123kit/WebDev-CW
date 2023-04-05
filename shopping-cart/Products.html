@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Payment</title>
+		
+		<link rel="stylesheet" type="text/css" href="Products.css">
+	</head>
+	<body>
+		<div class="OrderSummery">
+			<table style="width:45%">
+				<tr>
+					<th>Order Summery</th>		  
+				</tr>
+				<tr>
+				  <td>Name: </td>
+				</tr>
+				<tr>
+					
+					<td><div class="total-price"></div>Total: </td></div>
+				</tr>
+				<tr>
+					<td>Delivery Type: </td>
+				</tr>
+			  </table>
+		</div>
+	    <div class="form">
+		<fieldset>
+			<legend><h2> Payment Details: </h2> </legend>
+			<form action=" ">
+			<section id="image-container">
+                    <img src="C:\Users\Ginuri\Documents\Web Development\practice codes\payment.png.png" 
+					width="250px" height="60px" alt="image of payment methods">
+					
+			    <label for="Card-number">Card Number: </label>
+				<input id="Card-number" name="Card-number" type="number" maxlength="16" placeholder="1111-2222-3333-4444" required>
+				<br>
+				<label>Cardholder's Name: </label>
+				<input id="username" type="text" placeholder="Enter your name" required>
+				<br>
+				<label>Expiry Date: </label>
+				<input type="Date" placeholder="MM/YY">
+				<br>
+				<label>Security Code: </label>
+				<input type="password" maxlength="5" placeholder="***" required>
+				<br>
+				<!--Payment Button-->
+				    <button type="button" class="btn-payment">Make Payment</button>
+					
+				<details>
+						<summary>
+							Billing address
+						</summary>
+						
+				<fieldset>
+				<label>Address1 </label>
+				<input type="text" placeholder=" ">
+				<br>
+				<label>Address2 </label>
+				<input type="text" placeholder=" ">
+				<br>
+				<label>Address3 </label>
+				<input type="text" placeholder=" ">
+				<br>		
+				<label>Town/Ciry </label>
+				<input type="text" placeholder=" ">
+				<br>
+				<label>State/Region </label>
+				<input type="text" placeholder=" ">
+				<br>
+				<label>Postcode/Zip code </label>
+				<input type="Number" placeholder=" ">
+				<br>
+				<label>Country </label>
+				<input type="text" placeholder=" " required>
+				<br>
+				    <input type="button" value="Confirm" id="submit">
+				</details>
+				
+				<details>
+						<summary>
+								Contact Details:
+						</summary>
+
+
+			    <fieldset>
+				<label>Phone number </label>
+				<input type="number" placeholder=" " required>
+				<br>
+				<label>Email address </label>
+				<input id="useremail" type="email" placeholder="Enter your Email" required>
+				<br>
+				    <input type="button" value="Confirm" id="submit">
+				</details>
+			</form>
+		</body>
+	</div>
+	<script src="./payment.js"></script>
+</html>
