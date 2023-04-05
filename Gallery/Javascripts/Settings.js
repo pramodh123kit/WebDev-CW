@@ -1,14 +1,17 @@
 // Font size changer
 document.getElementById("small").addEventListener("click", function () {
   document.getElementsByTagName("html")[0].style.fontSize = "18px";
+  document.getElementsByClassName("carousel-container")[0].style.height = "50rem"
 });
 
 document.getElementById("medium").addEventListener("click", function () {
   document.getElementsByTagName("html")[0].style.fontSize = "21px";
+  document.getElementsByClassName("carousel-container")[0].style.height = "46rem"
 });
 
 document.getElementById("large").addEventListener("click", function () {
   document.getElementsByTagName("html")[0].style.fontSize = "24px";
+  document.getElementsByClassName("carousel-container")[0].style.height = "42rem"
 });
 
 // Random Color generator
