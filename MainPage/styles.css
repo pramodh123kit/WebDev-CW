@@ -1,6 +1,12 @@
 :root{
     --paragraph-font-size:1.5rem;
-    --color-grey:grey;
+    --h1-font-size:4rem;
+    --paragraph-font-color:#6D7779;
+    --h1-font-color:#034752;
+    --paragraph-font-family:'Lato', sans-serif;
+    --h1-font-family:'Caveat', cursive;
+    --line-height:1.5rem;
+    --box-shadow:5px 4px 5px 5px rgba(0,0,0,0.2);
 }
 body{
     margin: 0px;
@@ -36,15 +42,15 @@ body{
     width: 100%;
     border-radius: 4%;
     text-align: center;
-    box-shadow: 5px 4px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
 }
 .link-box h3{
     position: absolute;
-    color: #6D7779;
+    color: var(--paragraph-font-color);
     background: white;
     border-radius: 8%;
     padding: 0.5em;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--paragraph-font-family);
     font-size: 1.2em;
     top: 50%;
     left: 50%;
@@ -73,6 +79,8 @@ body{
     left: 50%;
     transform: translate(-50%, -100%);
 }
+
+/*------carousal-----------*/
 
 #carousal-section{
     height: 60vh;
@@ -233,18 +241,18 @@ body{
 /* ------------------------------------------------- */
 h1{
     text-align: center;
-    font-family: 'Caveat', cursive;
-      font-size: 4rem;
+    font-family: var(--h1-font-family);
+      font-size: var(--h1-font-size);
       font-weight: 1000;
-    color:  #034752;
+    color:  var(--h1-font-color);
 }
 p{
     text-align: center;
-    font-family: 'Lato', sans-serif;
-      font-size:1.5rem;
+    font-family: var(--paragraph-font-family);
+      font-size:var(--paragraph-font-size);
       font-weight: 400;
-      line-height: 1.5;
-      color: #6D7779;
+      line-height: var(--line-height);
+      color: var(--paragraph-font-color);
 }
 #welcome-container{
     width: 80vw;
@@ -313,7 +321,7 @@ p{
       position:relative;
       top:1px;
   }
-
+/*--------footer---------------*/
 footer {
     bottom: 0;
     left: 0;
