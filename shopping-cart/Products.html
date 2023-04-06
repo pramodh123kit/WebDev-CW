@@ -12,40 +12,39 @@
 					<th>Order Summery</th>		  
 				</tr>
 				<tr>
-				  <td>Name: <span id="nameDetail"></span> </td>
+				  <td>Name: </td>
 				</tr>
 				<tr>
 					
-					<td><div class="total-price"></div>Total: <span id="totalPriceItams"></span></td></div>
+					<td><div class="total-price"></div>Total: </td></div>
 				</tr>
 				<tr>
-					<td>Delivery Type: <span id="delivery"></span></td>
+					<td>Delivery Type: </td>
 				</tr>
 			  </table>
 		</div>
 	    <div class="form">
 		<fieldset>
 			<legend><h2> Payment Details: </h2> </legend>
-			<form action="index.html" method="GET">
+			<form action=" ">
 			<section id="image-container">
                     <img src="C:\Users\Ginuri\Documents\Web Development\practice codes\payment.png.png" 
 					width="250px" height="60px" alt="image of payment methods">
 					
 			    <label for="Card-number">Card Number: </label>
-				<input id="Card-number" name="Card-number" type="text" maxlength="16" placeholder="1111-2222-3333-4444" required>
+				<input id="Card-number" name="Card-number" type="number" maxlength="16" placeholder="1111-2222-3333-4444" required>
 				<br>
-				<label for="username">Cardholder's Name: </label>
+				<label>Cardholder's Name: </label>
 				<input id="username" type="text" placeholder="Enter your name" required>
 				<br>
-				<label for="date">Expiry Date: </label>
-				<input id="date" type="text" placeholder="MM/YY" required>
+				<label>Expiry Date: </label>
+				<input type="Date" placeholder="MM/YY">
 				<br>
-				<label for="code">Security Code: </label>
-				<input id="code" type="password" maxlength="5" placeholder="***" required>
+				<label>Security Code: </label>
+				<input type="password" maxlength="5" placeholder="***" required>
 				<br>
-
 				<!--Payment Button-->
-				    <button type="submit" id="btn" class="btn-payment">Make Payment</button>
+				    <button type="button" class="btn-payment">Make Payment</button>
 					
 				<details>
 						<summary>
@@ -53,28 +52,28 @@
 						</summary>
 						
 				<fieldset>
-				<label for="Address1">Address1 </label>
-				<input id="address1" type="text" placeholder=" " required>
+				<label>Address1 </label>
+				<input type="text" placeholder=" ">
 				<br>
-				<label for="Address1">Address2 </label>
-				<input id="address2" type="text" placeholder=" " required>
+				<label>Address2 </label>
+				<input type="text" placeholder=" ">
 				<br>
-				<label for="Address3">Address3 </label>
-				<input id="address3" type="text" placeholder=" " required>
+				<label>Address3 </label>
+				<input type="text" placeholder=" ">
 				<br>		
-				<label for="Town/City">Town/Ciry </label>
-				<input id="town" type="text" placeholder=" " required>
+				<label>Town/Ciry </label>
+				<input type="text" placeholder=" ">
 				<br>
-				<label for="State/Region">State/Region </label>
-				<input id="state" type="text" placeholder=" " required>
+				<label>State/Region </label>
+				<input type="text" placeholder=" ">
 				<br>
-				<label for="Postcode/Zip code">Postcode/Zip code </label>
-				<input id="zip" type="text" placeholder=" " required>
+				<label>Postcode/Zip code </label>
+				<input type="Number" placeholder=" ">
 				<br>
-				<label for="Country">Country </label>
-				<input id="country" type="text" placeholder=" " required>
+				<label>Country </label>
+				<input type="text" placeholder=" " required>
 				<br>
-				</fieldset>
+				    <input type="button" value="Confirm" id="submit">
 				</details>
 				
 				<details>
@@ -84,15 +83,14 @@
 
 
 			    <fieldset>
-				<label for="Phone Number">Phone number </label>
-				<input id="pnumber" type="text" placeholder=" " required>
+				<label>Phone number </label>
+				<input type="number" placeholder=" " required>
 				<br>
-				<label for="Emaill address">Email address </label>
+				<label>Email address </label>
 				<input id="useremail" type="email" placeholder="Enter your Email" required>
 				<br>
-				</fieldset>  
+				    <input type="button" value="Confirm" id="submit">
 				</details>
-			
 			</form>
 		</body>
 	</div>
