@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Payment</title>
 		
 		<link rel="stylesheet" type="text/css" href="Products.css">
@@ -12,39 +15,36 @@
 					<th>Order Summery</th>		  
 				</tr>
 				<tr>
-				  <td>Name: </td>
+				  <td>Name: <span id="nameDetail"></span> </td>
 				</tr>
 				<tr>
-					
-					<td><div class="total-price"></div>Total: </td></div>
+					<td><div class="total-price">Total: </div> <span id="totalPriceItams"></span></td>
 				</tr>
 				<tr>
-					<td>Delivery Type: </td>
+					<td>Delivery Type: <span id="delivery"></span></td>
 				</tr>
 			  </table>
 		</div>
-	    <div class="form">
+		<form action="index.html" method="GET">
 		<fieldset>
 			<legend><h2> Payment Details: </h2> </legend>
-			<form action=" ">
-			<section id="image-container">
-                    <img src="C:\Users\Ginuri\Documents\Web Development\practice codes\payment.png.png" 
-					width="250px" height="60px" alt="image of payment methods">
+                    <img src="payment.png" alt="image of payment methods">
 					
 			    <label for="Card-number">Card Number: </label>
-				<input id="Card-number" name="Card-number" type="number" maxlength="16" placeholder="1111-2222-3333-4444" required>
+				<input id="Card-number" name="Card-number" type="text" maxlength="16" placeholder="1111-2222-3333-4444" required>
 				<br>
-				<label>Cardholder's Name: </label>
+				<label for="username">Cardholder's Name: </label>
 				<input id="username" type="text" placeholder="Enter your name" required>
 				<br>
-				<label>Expiry Date: </label>
-				<input type="Date" placeholder="MM/YY">
+				<label for="date">Expiry Date: </label>
+				<input id="date" type="text" placeholder="MM/YY" required>
 				<br>
-				<label>Security Code: </label>
-				<input type="password" maxlength="5" placeholder="***" required>
+				<label for="code">Security Code: </label>
+				<input id="code" type="password" maxlength="5" placeholder="***" required>
 				<br>
+		</fieldset>
 				<!--Payment Button-->
-				    <button type="button" class="btn-payment">Make Payment</button>
+				    <button type="submit" id="btn" class="btn-payment">Make Payment</button>
 					
 				<details>
 						<summary>
@@ -52,28 +52,28 @@
 						</summary>
 						
 				<fieldset>
-				<label>Address1 </label>
-				<input type="text" placeholder=" ">
+				<label for="address1">Address1 </label>
+				<input id="address1" type="text" placeholder=" " required>
 				<br>
-				<label>Address2 </label>
-				<input type="text" placeholder=" ">
+				<label for="address2">Address2 </label>
+				<input id="address2" type="text" placeholder=" " required>
 				<br>
-				<label>Address3 </label>
-				<input type="text" placeholder=" ">
+				<label for="address3">Address3 </label>
+				<input id="address3" type="text" placeholder=" " required>
 				<br>		
-				<label>Town/Ciry </label>
-				<input type="text" placeholder=" ">
+				<label for="town">Town/Ciry </label>
+				<input id="town" type="text" placeholder=" " required>
 				<br>
-				<label>State/Region </label>
-				<input type="text" placeholder=" ">
+				<label for="state">State/Region </label>
+				<input id="state" type="text" placeholder=" " required>
 				<br>
-				<label>Postcode/Zip code </label>
-				<input type="Number" placeholder=" ">
+				<label for="zip">Postcode/Zip code </label>
+				<input id="zip" type="text" placeholder=" " required>
 				<br>
-				<label>Country </label>
-				<input type="text" placeholder=" " required>
+				<label for="country">Country </label>
+				<input id="country" type="text" placeholder=" " required>
 				<br>
-				    <input type="button" value="Confirm" id="submit">
+				</fieldset>
 				</details>
 				
 				<details>
@@ -83,16 +83,16 @@
 
 
 			    <fieldset>
-				<label>Phone number </label>
-				<input type="number" placeholder=" " required>
+				<label for="pnumber">Phone number </label>
+				<input id="pnumber" type="text" placeholder=" " required>
 				<br>
-				<label>Email address </label>
+				<label for="useremail">Email address </label>
 				<input id="useremail" type="email" placeholder="Enter your Email" required>
 				<br>
-				    <input type="button" value="Confirm" id="submit">
+				</fieldset>  
 				</details>
+			
 			</form>
+			<script src="./payment.js"></script>
 		</body>
-	</div>
-	<script src="./payment.js"></script>
 </html>

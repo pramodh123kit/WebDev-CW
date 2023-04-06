@@ -1,13 +1,15 @@
-div.form {
+form {
 	background: rgb(196, 214, 216);
 	width: 15cm;
 	height: 24cm;
 	padding: 10px 20px;
 }
 
-#image-container img{
+img{
 	float: right;
 	margin-left: 140px;
+	width: 250px;
+	height: 60px;
 }
 table,tr, th, td {
 	border:1px solid black;
@@ -18,7 +20,7 @@ table,tr, th, td {
 
 table{
 	float:right;
-	border-color: #10eb40;
+	border-color: #160344;
 }
 label{
 	width: 140px;
