@@ -75,7 +75,7 @@ h1{
 }
 
 text {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family:var(--paragraph-font-family);
   font-weight: bolder;
   transition: .1s ease-in-out;
 }
