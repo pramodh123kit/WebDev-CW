@@ -1,6 +1,6 @@
 :root{
   --paragraph-font-size:1.5rem;
-  --h1-font-size:4rem;
+  --h1-font-size:5rem;
   --paragraph-font-color:#6D7779;
   --h1-font-color:#034752;
   --paragraph-font-family:'Lato', sans-serif;
@@ -10,7 +10,7 @@
 }
 body{
   margin: 0px;
- position: relative;
+  position: relative;
   
 }
 #banner{

@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Ceylon Tourism - Shopping Cart</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../shopping-cart/footer.css">
-    <link rel="stylesheet" href="../shopping-cart/nav.css">
-
-    <link rel="icon" href="../shopping-cart/Logo_WDDCW.png" type="image/icontype"/>
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nav.css">
     <script
-      src="https://kit.fontawesome.com/a4656ff49f.js"
-      crossorigin="anonymous"
-    ></script>
+    src="https://kit.fontawesome.com/a4656ff49f.js"
+    crossorigin="anonymous"
+  ></script>
 
     <!---Box Icons-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -26,6 +24,7 @@
         <span></span>
         <span></span>
       </div>
+  
       <div id="menu">
         <div id="menu-items">
           <a href="../index.html" class="menu-item">Home</a>
@@ -65,11 +64,11 @@
                     <input id="username" type="text" placeholder="John" name="username"><br>
                     <label for ="useremail">User Email</label>
                     <input id="useremail" type="text" placeholder="someone@domain.com" name="useremail"><br>
-                    <input type="checkbox" name="delivery" id="delivery" value="Express Delivery" checked>
-                    <label for="delivery">Express Delivery</label>    
+                    <label for="delivery" style="width:fit-content">Express Delivery</label>    
+                    <input type="checkbox" name="delivery" id="delivery" style="display: inline; width:auto" checked>
                 </div>
                 <!--Buy Button-->
-                <button type="button" class="btn-buy">Place your order</button>
+                <button type="button" class="btn-buy" id="placeOrder">Place your order</button>
                 <!--Cart Close-->
                 <i class='bx bx-x' id="close-cart"></i>
             </div>
@@ -251,10 +250,16 @@
             </div>
 
         </div>
+
+
+
     </section>
 
+
     <a href="../PageEditor/index.html " class="pageeditor-link">Link to the page editor</a>
-    <!----- FOOTER ----->
+
+    <!---- Footer ---->
+
       <footer>
         <div class="footer-content">
           <h3>Ceylon Tourism</h3>
@@ -281,13 +286,14 @@
         </div>
         <div class="footer-bottom">
           <p>
-            copyright &copy;2023 Ceylon Tourism. designed by
+            <span> copyright &copy;2023 Ceylon Tourism. designed by</span>
             <span>H3 Group</span>
           </p>
         </div>
       </footer>
-    <script src="./main.js"></script>
+   
     <script src="../shopping-cart/nav.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
