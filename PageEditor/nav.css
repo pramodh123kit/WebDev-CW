@@ -1,13 +1,12 @@
 :root{
   --paragraph-font-size:1.5rem;
-  /* --paragraph-font-color:;
-  --main-color:;
-  --h1-font-size:;
-  --h1-font-color:;
-  --h2-font-size:;
-  --h2-font-color:;
-  --container-padding:; */
-  --color-grey:grey;
+  --h1-font-size:4rem;
+  --paragraph-font-color:#6D7779;
+  --h1-font-color:#034752;
+  --paragraph-font-family:'Lato', sans-serif;
+  --h1-font-family:'Caveat', cursive;
+  --line-height:1.5rem;
+  --box-shadow:5px 4px 5px 5px rgba(0,0,0,0.2);
 }
 body{
   margin: 0px;
@@ -17,38 +16,69 @@ body{
 #banner{
   width: 100vw;
   height: 100vh;
-  background: black;
-  position: static;
+  position: relative;
 }
 
-#hero-section{
-  height: 60vh;
+#content-links{
   width: 100vw;
-  background-color: white;
-  margin: 0rem;
-  overflow: hidden;
-  position: relative ;
-}
-
-#image-track > .image {
-  width: 40vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: 100% 50%;
-}
-
-#image-track{
+  height: 100vh;
   display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
+  justify-content: center;
+  align-items: center;
 }
 
+.link-box{
+  width: 16rem;
+  height: 22rem;
+  position: relative;
+  transition: ease 300ms;
+}
+.link-box:hover{
+  transform: scale(1.1);
+}
 
+.link-box img{
+  height: 100%;
+  width: 100%;
+  border-radius: 4%;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+.link-box h3{
+  position: absolute;
+  color: var(--paragraph-font-color);
+  background: white;
+  border-radius: 8%;
+  padding: 0.5em;
+  font-family: var(--paragraph-font-family);
+  font-size: 1.2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+#content-boxes{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 2em;
+  margin: 6em auto 1em auto;
+  width: 75vw;
 
-/* ---------Navigation bar styles -------------*/
+}
+
+#banner img{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#banner h1{
+  position: absolute;
+  font-size: 7em;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
 
 #menu{
   position: relative;
@@ -58,33 +88,32 @@ body{
   background-color: rgb(20, 20, 20);
   opacity: 0;
   transition: all 800ms ease;
-  z-index:-1;
+  z-index: -1;
 }
 
 #menu.is-active{
   opacity: 100;
   height: 100vh;
-   z-index:0;
+  z-index: 1;
 }
 
 .menu-item{
   color: white;
-  font-size: clamp(2rem,5vw,5rem);
-  font-family: "Ibarra Real Nova", serif;
+  font-size: 4rem;
+  font-family: 'Lato', sans-serif;
   display: block;
   text-decoration: none;
-  /* padding: clamp(0.25rem,0.5vw,1rem)0rem; */
+  padding: clamp(0.25rem,0.5vw,1rem)0rem;
   transition: opacity 400ms ease;
-  padding: 10px;
 }
 
 #menu-items{
   margin-left: clamp(4rem,20vw,48rem);
   position: relative;
   z-index: 2;
-  padding-top: 5em;
-  text-align: left;
+  padding-top: 2em;
   line-height: 80px;
+  text-align: left;
 }
 
 #menu-items:hover > .menu-item{
@@ -104,6 +133,7 @@ body{
   );
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
+  position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
@@ -119,7 +149,7 @@ body{
 #menu-background-image{
   height: 100%;
   width: 100%;
-  background-image: url(navbar-img.jpg);
+  background-image: url(../PageEditor/navbar-img.jpg);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -138,7 +168,7 @@ body{
 
 .toggle-btn{
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 25px;
   z-index: 2;
   display: flex;
@@ -153,10 +183,7 @@ body{
   display: flex;
   position: absolute;
   transition: .3s;
-  /* background: rgb(0, 0, 0); */
-}
-span {
-  background: rgb(0, 0, 0);
+  background: grey;
 }
 
 .toggle-btn > span:nth-child(1){
@@ -179,45 +206,4 @@ span {
 .toggle-btn.is-active span:nth-child(2){
   top: 50%;
   transform: rotate(-45deg);
-}
-
-/* ------------------------------------------------- */
-#welcome-container{
-  width: 80vw;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#partners{
-  width: 80vw;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-#partners .partners-img {
-  display: flex;
-  gap: 7;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
- 
-}
-#partners img{
-  max-height: 14rem;
-  max-width: 14rem;
-  margin: 2em 6em 2em 6em;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  transition: all .3s ease;
-  
-}
-
-#partners img:hover{
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
 }
